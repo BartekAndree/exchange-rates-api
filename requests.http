@@ -1,0 +1,21 @@
+POST http://127.0.0.1:8000/api/convert
+Content-Type: application/json
+
+{
+  "input_currency": "PLN",
+  "output_currencies": ["EUR", "USD", "AMD"],
+  "amount": 123.45,
+  "date": "2022-08-24"
+}
+
+###
+
+POST http://127.0.0.1:8000/api/convert
+Content-Type: application/json
+
+{
+  "input_currency": "CZK",
+  "output_currencies": ["PLN", "GBP"],
+  "amount": 54321.99,
+  "date": "2021-01-01"
+}
